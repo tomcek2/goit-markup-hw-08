@@ -1,0 +1,18 @@
+.client {
+  display: flex;
+  justify-content: space-between;
+
+  &__icon {
+    padding: 17.71px 32px 14.25px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: getColor('icons');
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: getColor('brand-primary');
+      border: 1px solid getColor('brand-primary');
+    }
+  }
+}

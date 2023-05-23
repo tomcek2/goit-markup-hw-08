@@ -1,0 +1,50 @@
+.checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  gap: 7px;
+  padding-left: 36px;
+
+  &__look {
+    position: absolute;
+    top: 4px;
+    left: 14px;
+    height: 12px;
+    width: 12px;
+    background: transparent;
+    border-radius: 2px;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    position: absolute;
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__text {
+    font-weight: 400;
+    line-height: 1.71;
+    color: getColor('text-light');
+  }
+  &__link {
+    color: getColor('brand-primary');
+    text-decoration: underline;
+  }
+  &__original {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .checkbox__look {
+      background: getColor('brand-primary');
+      border: 2px solid #2196f3;
+    }
+    &:checked ~ .checkbox__look .checkbox__icon {
+      fill: getColor('brand-tetriary');
+    }
+  }
+}

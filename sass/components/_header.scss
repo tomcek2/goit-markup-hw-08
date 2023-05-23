@@ -1,0 +1,54 @@
+.nav {
+  display: inline-flex;
+  align-items: center;
+  padding: 24px 0px 25px 0px;
+
+  &__list {
+    display: inline-flex;
+    gap: 46px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &--start {
+      margin-left: 93px;
+    }
+    &--contact {
+      align-content: center;
+      align-items: center;
+      gap: 30px;
+      padding: 15px;
+      color: getColor('text-light');
+      fill: getColor('text-light');
+    }
+  }
+  &__highlight {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      color: getColor('brand-primary');
+      fill: getColor('brand-primary');
+    }
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.active-site {
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: getColor('brand-primary');
+    left: 0;
+    bottom: -34px;
+    border-radius: 2px;
+  }
+}

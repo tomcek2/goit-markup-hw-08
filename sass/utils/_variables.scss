@@ -1,0 +1,25 @@
+$colors: (
+  'brand-primary': #2196f3,
+  'brand-primary-alpha': rgba(33, 150, 243, 0.4),
+  'brand-secondary': #000,
+  'brand-tetriary': #fff,
+  'text-primary': #212121,
+  'text-light': #757575,
+  'background-light': #f5f4fa,
+  'background-mid': #ececec,
+  'background-dark': #2f303a,
+  'icons': #afb1b8,
+  'button-light': #f5f4fa,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$fonts: (
+  'brand': 'Raleway',
+  'main': 'Roboto',
+);
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}

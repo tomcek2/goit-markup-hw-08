@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+h3 {
+  font-size: inherit;
+}
+body {
+  font-family: getFont('main');
+  color: getColor('text-primary');
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,47 @@
+.address {
+  display: inline-flex;
+  flex-direction: column;
+
+  &--top {
+    margin-top: 11px;
+  }
+  &__info {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    color: getColor('brand-tetriary');
+    letter-spacing: 0.03em;
+    margin-top: 11px;
+    margin-top: 9px;
+
+    &--link {
+      @extend .address__info;
+      opacity: 0.6;
+    }
+  }
+}
+.newsletter {
+  &__original {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    min-width: 328px;
+  }
+  &__look {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1, 25;
+    color: rgba(255, 255, 255, 0.6);
+
+    &::placeholder {
+      @extend .newsletter__look;
+    }
+  }
+  &__email {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+}

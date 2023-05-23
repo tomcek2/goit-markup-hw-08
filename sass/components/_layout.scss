@@ -1,0 +1,38 @@
+.section {
+  padding: 94px 0;
+
+  &__technology {
+    padding-bottom: 0;
+  }
+  &--light {
+    background-color: getColor('background-light');
+  }
+  &--dark {
+    background-color: getColor('background-dark');
+  }
+}
+%flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  &--header {
+    @extend %flex-center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ececec;
+  }
+  &--footer {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__buttons {
+    @extend %flex-center;
+    gap: 8px;
+  }
+}

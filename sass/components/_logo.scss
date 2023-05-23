@@ -1,0 +1,15 @@
+.logo {
+  font-family: getFont('brand');
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1.19;
+  color: getColor('brand-primary');
+
+  &--dark {
+    color: getColor('brand-secondary');
+  }
+  &--light {
+    color: getColor('brand-tetriary');
+  }
+}

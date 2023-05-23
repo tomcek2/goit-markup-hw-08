@@ -1,0 +1,19 @@
+.work {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+
+  &__container {
+    position: relative;
+  }
+  &-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    padding: 27px 0;
+    color: getColor('brand-tetriary');
+  }
+}
