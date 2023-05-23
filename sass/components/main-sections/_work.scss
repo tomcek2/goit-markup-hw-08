@@ -1,5 +1,6 @@
 .work {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
 
@@ -15,5 +16,10 @@
     text-align: center;
     padding: 27px 0;
     color: getColor('brand-tetriary');
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    flex-wrap: nowrap;
   }
 }

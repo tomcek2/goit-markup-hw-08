@@ -1,5 +1,5 @@
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 
   &__technology {
     padding-bottom: 0;
@@ -11,13 +11,13 @@
     background-color: getColor('background-dark');
   }
 }
+
 %flex-center {
   display: flex;
   justify-content: center;
 }
-
 .container {
-  max-width: 1200px;
+  min-width: 320px;
   width: 100%;
   margin: 0 auto;
 
@@ -30,9 +30,33 @@
     padding: 60px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__buttons {
     @extend %flex-center;
     gap: 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+
+    &--footer {
+      flex-wrap: nowrap;
+    }
   }
 }

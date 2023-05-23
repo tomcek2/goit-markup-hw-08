@@ -1,5 +1,6 @@
 .technology {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   &__icon {
@@ -12,5 +13,11 @@
     color: getColor('text-light');
     line-height: 1.71;
     margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .technology {
+    flex-wrap: nowrap;
   }
 }

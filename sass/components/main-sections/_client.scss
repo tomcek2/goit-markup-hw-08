@@ -1,6 +1,7 @@
 .client {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   &__icon {
     padding: 17.71px 32px 14.25px;
@@ -14,5 +15,10 @@
       fill: getColor('brand-primary');
       border: 1px solid getColor('brand-primary');
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client {
+    flex-wrap: nowrap;
   }
 }
