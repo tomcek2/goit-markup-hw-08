@@ -25,12 +25,13 @@
     @extend %flex-center;
     justify-content: space-between;
     border-bottom: 1px solid #ececec;
+    padding: 10px 15px;
   }
   &--footer {
     padding: 60px 0;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
   &__buttons {
     @extend %flex-center;
@@ -55,8 +56,15 @@
   .container {
     max-width: 1200px;
 
+    &--header {
+      @extend %flex-center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ececec;
+    }
+
     &--footer {
-      flex-wrap: nowrap;
+      display: flex;
+      justify-content: space-around;
     }
   }
 }

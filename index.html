@@ -15,36 +15,25 @@
     <link href="css/main.min.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="page-header">
+    <header>
       <div class="container container--header">
         <!-- SITE NAVIGATION -->
         <nav class="nav">
           <a class="logo" href="index.html">web<span class="logo--dark">Studio</span></a>
-          <button
-            class="menu-mobile__button js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+
           <ul class="nav__list nav__list--start">
             <li><a class="nav__highlight active-site" href="index.html">Agencja</a></li>
             <li><a class="nav__highlight" href="portfolio.html">Portfolio</a></li>
             <li><a class="nav__highlight" href="#">Kontakt</a></li>
           </ul>
         </nav>
+        <button
+          class="menu-mobile__button highlight js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40"><use href="./images/icons.svg#icon-menu"></use></svg>
+        </button>
         <!-- CONTACT INFO -->
         <ul class="nav__list nav__list--contact">
           <li class="nav__highlight">
@@ -85,8 +74,8 @@
               <svg class="technology__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna-1"></use>
               </svg>
-              <h3 class="container__title-s">LOREM IPSUM</h3>
-              <p class="technology__paragraph">
+              <h3 class="technology__title">LOREM IPSUM</h3>
+              <p class="technology__paragraph technology__paragraph--end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
@@ -95,8 +84,8 @@
               <svg class="technology__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-clock-1"></use>
               </svg>
-              <h3 class="container__title-s">LOREM IPSUM</h3>
-              <p class="technology__paragraph">
+              <h3 class="technology__title">LOREM IPSUM</h3>
+              <p class="technology__paragraph technology__paragraph--end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
@@ -105,8 +94,8 @@
               <svg class="technology__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram-1"></use>
               </svg>
-              <h3 class="container__title-s">LOREM IPSUM</h3>
-              <p class="technology__paragraph">
+              <h3 class="technology__title">LOREM IPSUM</h3>
+              <p class="technology__paragraph technology__paragraph--end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
@@ -115,7 +104,7 @@
               <svg class="technology__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut-1"></use>
               </svg>
-              <h3 class="container__title-s">LOREM IPSUM</h3>
+              <h3 class="technology__title">LOREM IPSUM</h3>
               <p class="technology__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
@@ -127,7 +116,7 @@
       <!-- WORKS -->
       <section class="section">
         <div class="container">
-          <h2 class="container__title-l">Czym się zajmujemy</h2>
+          <h2 class="container__title-l work--title">Czym się zajmujemy</h2>
           <ul class="work">
             <li class="work__container">
               <img src="images/tech1.jpg" alt="writing code" width="370" height="294" />
@@ -331,8 +320,8 @@
           </ul>
         </div>
         <!-- SOCIAL LINKS -->
-        <div>
-          <h3 class="container__title-s container__title-s--light">dołącz do nas</h3>
+        <div class="socia-media--gap">
+          <h3 class="social-media__title">dołącz do nas</h3>
           <ul class="social-media">
             <li class="social-media__icon social-media__icon--dark">
               <svg width="20" height="20">
@@ -454,33 +443,29 @@
     <script src="./js/modal.js"></script>
     <!-- MENU MOBILE -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-mobile__butt js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+      <button class="menu-mobile__butt highlight js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <ul class="menu-mobile__links">
-        <li><a class="menu-mobile__link" href="index.html">Agencja</a></li>
-        <li><a class="menu-mobile__link" href="portfolio.html">Portfolio</a></li>
-        <li><a class="menu-mobile__link" href="#">Kontakt</a></li>
-      </ul>
-      <ul class="">
-        <li class="menu-mobile__contact">
-          <a class="" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+        <li class="menu-mobile__link highlight link--gap"><a href="index.html">Agencja</a></li>
+        <li class="menu-mobile__link highlight link--gap">
+          <a href="portfolio.html">Portfolio</a>
         </li>
-        <li class="">
-          <a class="mobile-menu__contact" href="tel:+48111111111"> +48 111 111 111</a>
+        <li class="menu-mobile__link highlight"><a href="#">Kontakt</a></li>
+        <li class="tel-gap">
+          <a class="menu-mobile__tel" href="tel:+48111111111">+48 111 111 111</a>
         </li>
+        <li>
+          <a class="menu-mobile__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <ul class="menu-mobile__sm">
+          <li><a class="menu-mobile__smc" href="#">Instagram</a></li>
+          <li><a class="menu-mobile__smc" href="#">Twitter</a></li>
+          <li><a class="menu-mobile__smc" href="#">Facebook</a></li>
+          <li><a class="menu-mobile__smc" href="#">LinkedIn</a></li>
+        </ul>
       </ul>
     </div>
     <script

@@ -22,4 +22,27 @@
       fill: getColor('brand-tetriary');
     }
   }
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.17;
+    color: getColor('brand-tetriary');
+    margin: 12px 0 20px;
+    display: block;
+    text-align: center;
+  }
+  &--gap {
+    padding: 60px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-media {
+    &__title {
+      text-align: start;
+    }
+    &--gap {
+      padding: 0;
+    }
+  }
 }

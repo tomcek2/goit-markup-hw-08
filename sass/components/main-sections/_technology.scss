@@ -1,23 +1,47 @@
 .technology {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  flex-direction: column;
+  padding: 0 15px;
 
   &__icon {
     background-color: getColor('background-light');
-    padding: 25px 100px;
     margin-bottom: 30px;
+    padding: 25px 190px;
+    display: inline-flex;
+    justify-self: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
   }
 
   &__paragraph {
     color: getColor('text-light');
     line-height: 1.71;
     margin-top: 10px;
+
+    &--end {
+      margin-bottom: 30px;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .technology {
-    flex-wrap: nowrap;
+    margin-top: 0;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0 auto;
+
+    &__icon {
+      padding: 25px 100px;
+    }
+
+    &__title {
+      text-align: start;
+    }
   }
 }
