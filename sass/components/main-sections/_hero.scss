@@ -1,6 +1,6 @@
 .hero {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-background.jpg');
+    url('../images/hero-background-smartphone.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,10 +17,35 @@
     letter-spacing: 0.06em;
   }
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-background-smartphone.jpg');
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-background-smartphone@x2.jpg');
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/hero-background@x1.jpg');
+      url('../images/hero-background-tablet.jpg');
+    &__title {
+    }
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-background-tablet@x2.jpg');
     &__title {
     }
   }
@@ -28,7 +53,21 @@
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/hero-background@x2.jpg');
+      url('../images/hero-background-desktop.jpg');
+    padding: 200px 0;
+
+    &__title {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-background-desktop.jpg');
     padding: 200px 0;
 
     &__title {
