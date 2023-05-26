@@ -7,11 +7,11 @@
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 768px) {
   .nav {
     display: inline-flex;
     align-items: center;
-    padding: 24px 0px 25px 0px;
 
     &__list {
       display: inline-flex;
@@ -21,33 +21,37 @@
       letter-spacing: 0.02em;
 
       &--start {
-        margin-left: 93px;
+        margin-left: 83px;
       }
       &--contact {
-        align-content: center;
-        align-items: center;
-        gap: 30px;
-        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
         color: getColor('text-light');
         fill: getColor('text-light');
       }
     }
-    &__highlight {
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__item {
       position: relative;
       display: inline-flex;
       align-items: center;
-
-      &:hover,
-      &:focus {
-        color: getColor('brand-primary');
-        fill: getColor('brand-primary');
-      }
     }
     &__link {
       display: inline-flex;
       align-items: center;
       gap: 10px;
+      font-size: 12px;
+    }
+    &__icon {
+      &--envelope {
+        width: 14px;
+        height: 10px;
+      }
+      &--smartphone {
+        width: 10px;
+        height: 14px;
+      }
     }
   }
   .active-site {
@@ -58,8 +62,56 @@
       height: 4px;
       background-color: getColor('brand-primary');
       left: 0;
-      bottom: -34px;
+      bottom: -28px;
       border-radius: 2px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: inline-flex;
+    align-items: center;
+
+    &__list {
+      display: inline-flex;
+      gap: 46px;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+
+      &--contact {
+        display: inline-flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        gap: 30px;
+        color: getColor('text-light');
+        fill: getColor('text-light');
+      }
+
+      &--start {
+        margin-left: 93px;
+      }
+    }
+    &__link {
+      font-size: 14px;
+    }
+
+    &__icon {
+      &--envelope {
+        width: 16px;
+        height: 12px;
+      }
+      &--smartphone {
+        width: 10px;
+        height: 16px;
+      }
+    }
+  }
+  .active-site {
+    &::after {
+      bottom: -34px;
     }
   }
 }

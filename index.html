@@ -22,9 +22,9 @@
           <a class="logo" href="index.html">web<span class="logo--dark">Studio</span></a>
 
           <ul class="nav__list nav__list--start">
-            <li><a class="nav__highlight active-site" href="index.html">Agencja</a></li>
-            <li><a class="nav__highlight" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav__highlight" href="#">Kontakt</a></li>
+            <li><a class="nav__item highlight active-site" href="index.html">Agencja</a></li>
+            <li><a class="nav__item highlight" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav__item highlight" href="#">Kontakt</a></li>
           </ul>
         </nav>
         <button
@@ -36,17 +36,17 @@
         </button>
         <!-- CONTACT INFO -->
         <ul class="nav__list nav__list--contact">
-          <li class="nav__highlight">
+          <li class="nav__item highlight">
             <a class="nav__link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12">
+              <svg class="nav__icon--envelope" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="nav__highlight">
+          <li class="nav__item highlight">
             <a class="nav__link" href="tel:+48111111111">
-              <svg width="10" height="16">
+              <svg class="nav__icon--smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -67,7 +67,7 @@
         </div>
       </section>
       <!-- TECHNOLOGY -->
-      <section class="section section__technology">
+      <section class="section section--technology">
         <div class="container">
           <ul class="technology">
             <li>
@@ -114,7 +114,7 @@
         </div>
       </section>
       <!-- WORKS -->
-      <section class="section">
+      <section class="section section--work">
         <div class="container">
           <h2 class="container__title-l work--title">Czym się zajmujemy</h2>
           <ul class="work">
@@ -141,12 +141,12 @@
             <li>
               <figure class="member">
                 <img
-                  class="member_img"
+                  class="member__img"
                   src="images/person1.jpg"
                   srcset="images/person1@x2.jpg 2x"
                   alt="guy with glasses"
-                  width="270px"
-                  height="250px"
+                  width="450px"
+                  height="460px"
                 />
                 <figcaption class="member__caption">
                   <h3 class="member__name">John Doe</h3>
@@ -179,11 +179,12 @@
             <li>
               <figure class="member">
                 <img
+                  class="member__img"
                   src="images/person2.jpg"
                   srcset="images/person2@x2.jpg 2x"
                   alt="gal with glasses"
-                  width="270px"
-                  height="250px"
+                  width="450px"
+                  height="460px"
                 />
                 <figcaption class="member__caption">
                   <h3 class="member__name">John Doe</h3>
@@ -216,11 +217,12 @@
             <li>
               <figure class="member">
                 <img
+                  class="member__img"
                   src="images/person3.jpg"
                   srcset="images/person3@x2.jpg 2x"
                   alt="guy without glasses"
-                  width="270px"
-                  height="250px"
+                  width="450px"
+                  height="460px"
                 />
                 <figcaption class="member__caption">
                   <h3 class="member__name">John Doe</h3>
@@ -253,11 +255,12 @@
             <li>
               <figure class="member">
                 <img
+                  class="member__img"
                   src="images/person4.jpg"
                   srcset="images/person4@x2.jpg 2x"
                   alt="close up of John Doe"
-                  width="270px"
-                  height="250px"
+                  width="450px"
+                  height="460px"
                 />
                 <figcaption class="member__caption">
                   <h3 class="member__name">John Doe</h3>
@@ -345,7 +348,7 @@
           </ul>
         </div>
         <!-- SOCIAL LINKS -->
-        <div class="socia-media--gap">
+        <div class="social-media--container">
           <h3 class="social-media__title">dołącz do nas</h3>
           <ul class="social-media">
             <li class="social-media__icon social-media__icon--dark">
@@ -394,7 +397,7 @@
     <!-- OKNO MODALNE-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-button modal__close-button" data-modal-close>
+        <button type="button" class="close-button" data-modal-close>
           <svg width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -474,11 +477,13 @@
         </svg>
       </button>
       <ul class="menu-mobile__links">
-        <li class="menu-mobile__link highlight link--gap"><a href="index.html">Agencja</a></li>
-        <li class="menu-mobile__link highlight link--gap">
+        <li class="menu-mobile__link menu-mobile__link--active link--gap">
+          <a href="index.html">Agencja</a>
+        </li>
+        <li class="menu-mobile__link link--gap">
           <a href="portfolio.html">Portfolio</a>
         </li>
-        <li class="menu-mobile__link highlight"><a href="#">Kontakt</a></li>
+        <li class="menu-mobile__link"><a href="#">Kontakt</a></li>
         <li class="tel-gap">
           <a class="menu-mobile__tel" href="tel:+48111111111">+48 111 111 111</a>
         </li>
@@ -486,9 +491,9 @@
           <a class="menu-mobile__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
         <ul class="menu-mobile__sm">
-          <li><a class="menu-mobile__smc" href="#">Instagram</a></li>
-          <li><a class="menu-mobile__smc" href="#">Twitter</a></li>
-          <li><a class="menu-mobile__smc" href="#">Facebook</a></li>
+          <li><a class="menu-mobile__smc menu-mobile__smc--border" href="#">Instagram</a></li>
+          <li><a class="menu-mobile__smc menu-mobile__smc--border" href="#">Twitter</a></li>
+          <li><a class="menu-mobile__smc menu-mobile__smc--border" href="#">Facebook</a></li>
           <li><a class="menu-mobile__smc" href="#">LinkedIn</a></li>
         </ul>
       </ul>

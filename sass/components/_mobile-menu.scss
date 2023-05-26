@@ -7,11 +7,6 @@
   border: none;
   outline: none;
 }
-.highlight:hover,
-.highlight:focus {
-  fill: getColor('brand-primary');
-  color: getColor('brand-primary');
-}
 
 @media (min-width: 768px) {
   .menu-mobile__button {
@@ -61,6 +56,10 @@
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
+
+  &--active {
+    color: getColor('brand-primary');
+  }
 }
 .link--gap {
   margin-bottom: 32px;
@@ -85,6 +84,7 @@
 }
 .menu-mobile__sm {
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding-top: 64px;
 }
@@ -95,5 +95,8 @@
   letter-spacing: 0.02em;
   color: getColor('brand-primary');
   padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &--border {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }

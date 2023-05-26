@@ -19,25 +19,33 @@
         <!-- SITE NAVIGATION -->
         <nav class="nav">
           <a class="logo" href="index.html">web<span class="logo--dark">Studio</span></a>
+
           <ul class="nav__list nav__list--start">
-            <li><a class="nav__highlight" href="index.html">Agencja</a></li>
-            <li><a class="nav__highlight active-site" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav__highlight" href="#">Kontakt</a></li>
+            <li><a class="nav__item highlight active-site" href="index.html">Agencja</a></li>
+            <li><a class="nav__item highlight" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav__item highlight" href="#">Kontakt</a></li>
           </ul>
         </nav>
+        <button
+          class="menu-mobile__button highlight js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40"><use href="./images/icons.svg#icon-menu"></use></svg>
+        </button>
         <!-- CONTACT INFO -->
         <ul class="nav__list nav__list--contact">
-          <li class="nav__highlight">
+          <li class="nav__item highlight">
             <a class="nav__link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12">
+              <svg class="nav__icon--envelope" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="nav__highlight">
+          <li class="nav__item highlight">
             <a class="nav__link" href="tel:+48111111111">
-              <svg width="10" height="16">
+              <svg class="nav__icon--smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -68,7 +76,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port1.jpg" alt="laptop screen" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port1.jpg"
+                    alt="laptop screen"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -84,7 +98,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port2.jpg" alt="basketball players" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port2.jpg"
+                    alt="basketball players"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -100,7 +120,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port3.jpg" alt="restaurant logo" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port3.jpg"
+                    alt="restaurant logo"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -116,7 +142,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port4.jpg" alt="headphones" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port4.jpg"
+                    alt="headphones"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -132,7 +164,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port5.jpg" alt="two boxes" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port5.jpg"
+                    alt="two boxes"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -148,7 +186,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port6.jpg" alt="pc screen" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port6.jpg"
+                    alt="pc screen"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -164,7 +208,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port7.jpg" alt="opened magazine" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port7.jpg"
+                    alt="opened magazine"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -180,7 +230,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port8.jpg" alt="pendant" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port8.jpg"
+                    alt="pendant"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -196,7 +252,13 @@
             <li>
               <figure class="card">
                 <div class="card__overflow">
-                  <img src="images/port9.jpg" alt="writing on computer" width="370" height="294" />
+                  <img
+                    class="card__img"
+                    src="images/port9.jpg"
+                    alt="writing on computer"
+                    width="450"
+                    height="294"
+                  />
                   <p class="card__description">
                     Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania
                     koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na
@@ -229,8 +291,8 @@
           </ul>
         </div>
         <!-- SOCIAL LINKS -->
-        <div>
-          <h3 class="container__title-s container__title-s--light">dołącz do nas</h3>
+        <div class="social-media--container">
+          <h3 class="social-media__title">dołącz do nas</h3>
           <ul class="social-media">
             <li class="social-media__icon social-media__icon--dark">
               <svg width="20" height="20">
@@ -256,7 +318,7 @@
         </div>
         <!-- NEWSLETTER-->
         <form class="newsletter">
-          <label for="newsletter-email" class="container__title-s container__title-s--light"
+          <label for="newsletter-email" class="container__title-s container__title-s--footer"
             >Zapisz się do newslettera</label
           >
           <label class="newsletter__email"
@@ -275,5 +337,41 @@
         </form>
       </div>
     </footer>
+    <!-- MENU MOBILE -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-mobile__butt highlight js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-mobile__links">
+        <li class="menu-mobile__link menu-mobile__link--active link--gap">
+          <a href="index.html">Agencja</a>
+        </li>
+        <li class="menu-mobile__link link--gap">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu-mobile__link"><a href="#">Kontakt</a></li>
+        <li class="tel-gap">
+          <a class="menu-mobile__tel" href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+        <li>
+          <a class="menu-mobile__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <ul class="menu-mobile__sm">
+          <li><a class="menu-mobile__smc menu-mobile__smc--border" href="#">Instagram</a></li>
+          <li><a class="menu-mobile__smc menu-mobile__smc--border" href="#">Twitter</a></li>
+          <li><a class="menu-mobile__smc menu-mobile__smc--border" href="#">Facebook</a></li>
+          <li><a class="menu-mobile__smc" href="#">LinkedIn</a></li>
+        </ul>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

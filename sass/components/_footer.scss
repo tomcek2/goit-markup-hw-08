@@ -4,7 +4,7 @@
   text-align: center;
 
   &--top {
-    margin-top: 11px;
+    margin-top: 12px;
   }
   &__info {
     font-size: 14px;
@@ -12,8 +12,7 @@
     line-height: 1.71;
     color: getColor('brand-tetriary');
     letter-spacing: 0.03em;
-    margin-top: 11px;
-    margin-top: 9px;
+    margin-top: 8px;
 
     &--link {
       @extend .address__info;
@@ -51,15 +50,45 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+}
+.newsletter {
+  &__original {
+    max-width: 330px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    text-align: center;
+  }
+  .newsletter {
+    &__original {
+      max-width: 430px;
+    }
+
+    &__email {
+      margin: 0 0 20px;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .address {
     text-align: start;
+
+    &--top {
+      margin-top: 11px;
+    }
+    &__info {
+      margin-top: 9px;
+    }
   }
   .newsletter {
     display: block;
 
     &__original {
-      width: 330px;
+      max-width: 330px;
     }
 
     &__email {

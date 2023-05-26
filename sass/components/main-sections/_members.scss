@@ -9,11 +9,12 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 100%;
+  width: 90vw;
 
   &__img {
-    width: 270px;
-    height: 250px;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   &__caption {
@@ -31,16 +32,30 @@
     margin-bottom: 16px;
   }
 }
+@media screen and (min-width: 480px) {
+  .member {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .member {
+    width: 354px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .members {
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 30px;
   }
   .member {
-    &__img {
-      width: 270px;
-      height: 260px;
-    }
+    width: 270px;
   }
 }
