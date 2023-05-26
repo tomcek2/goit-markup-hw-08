@@ -1,5 +1,6 @@
 .section {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__technology {
     padding-bottom: 0;
@@ -17,8 +18,7 @@
   justify-content: center;
 }
 .container {
-  min-width: 320px;
-  width: 100%;
+  max-width: 70vw;
   margin: 0 auto;
 
   &--header {
@@ -50,9 +50,12 @@
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__technology {
+      padding-bottom: 0;
+    }
   }
-
   .container {
     max-width: 1200px;
 

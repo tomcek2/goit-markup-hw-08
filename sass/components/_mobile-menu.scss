@@ -17,6 +17,11 @@
   .menu-mobile__button {
     display: none;
   }
+  .menu-container {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .menu-container {

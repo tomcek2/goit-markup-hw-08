@@ -1,14 +1,13 @@
 .technology {
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
+  justify-content: center;
+  align-items: center;
 
   &__icon {
     background-color: getColor('background-light');
     margin-bottom: 30px;
-    padding: 25px 190px;
-    display: inline-flex;
-    justify-self: center;
+    padding: 25px 30vw;
   }
 
   &__title {
@@ -28,10 +27,26 @@
     }
   }
 }
+@media screen and (min-width: 480px) {
+  .technology {
+    padding: 0 15px;
+    &__icon {
+      padding: 25px 190px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .technology {
+    flex-direction: row;
+    padding: 0 auto;
 
+    &__icon {
+      padding: 25px 142px;
+    }
+  }
+}
 @media screen and (min-width: 1200px) {
   .technology {
-    margin-top: 0;
     flex-direction: row;
     gap: 30px;
     padding: 0 auto;

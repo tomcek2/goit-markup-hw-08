@@ -12,8 +12,8 @@
   width: 100%;
 
   &__img {
-    width: 450px;
-    height: 460px;
+    width: 270px;
+    height: 250px;
   }
 
   &__caption {
@@ -35,7 +35,7 @@
   .members {
     flex-direction: row;
     justify-content: space-between;
-    gap: 0;
+    gap: 30px;
   }
   .member {
     &__img {
