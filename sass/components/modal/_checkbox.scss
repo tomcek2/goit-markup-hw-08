@@ -3,12 +3,12 @@
   position: relative;
   cursor: pointer;
   gap: 7px;
-  padding-left: 36px;
+  padding-left: 20px;
 
   &__look {
     position: absolute;
-    top: 4px;
-    left: 14px;
+    top: -1px;
+    left: 0px;
     height: 12px;
     width: 12px;
     background: transparent;
@@ -25,7 +25,8 @@
   }
   &__text {
     font-weight: 400;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     color: getColor('text-light');
   }
   &__link {
@@ -45,6 +46,15 @@
     }
     &:checked ~ .checkbox__look .checkbox__icon {
       fill: getColor('brand-tetriary');
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    padding-left: 36px;
+    &__text {
+      font-size: 14px;
+      line-height: 1.71;
     }
   }
 }

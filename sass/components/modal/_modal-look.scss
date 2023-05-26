@@ -12,8 +12,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: getColor('brand-tetriary');
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,7 +30,7 @@
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1, 15;
+    line-height: 1.15;
     text-align: center;
     color: getColor('text-primary');
     padding: 40px 0 12px;
@@ -54,5 +54,12 @@
   & .modal {
     scale: 0;
     opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
   }
 }

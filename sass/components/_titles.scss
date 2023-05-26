@@ -1,7 +1,7 @@
 .container {
   &__title-l {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     margin-bottom: 50px;
@@ -11,8 +11,20 @@
     font-weight: 700;
     line-height: 1.17;
 
-    &--light {
+    &--footer {
       color: getColor('brand-tetriary');
+      margin: 60px 0 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    &__title-l {
+      font-size: 36px;
+    }
+
+    &__title-s--footer {
       margin: 12px 0 20px;
       display: block;
     }

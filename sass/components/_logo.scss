@@ -1,9 +1,9 @@
 .logo {
   font-family: getFont('brand');
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   text-transform: capitalize;
-  line-height: 1.19;
+  line-height: 1.17;
   color: getColor('brand-primary');
 
   &--dark {
@@ -11,5 +11,12 @@
   }
   &--light {
     color: getColor('brand-tetriary');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
